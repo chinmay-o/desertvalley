@@ -7,6 +7,27 @@ Author:		elemis
 */
 @import url(https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700);
 
+#logStatus {
+
+  display: none;
+}
+
+.tenor-gif-embed {
+
+  display: none;
+}
+
+.custom-grid {
+
+  flex-direction: row!important;
+  display: -webkit-box!important;
+}
+
+.custom-grid .post-header {
+
+  margin-right: auto;
+}
+
 :root {
   --bs-gray-100: #fefefe;
   --bs-gray-200: #f6f7f9;
