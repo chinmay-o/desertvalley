@@ -32,14 +32,6 @@ var checkLogin = setInterval(function() {
   }
 }, 200)
 
-setTimeout(function() {
-
-  if (firebase.auth().currentUser == null) {
-
-    window.location.href = "/signin.html";
-  }
-}, 5000)
-
 // General Function
 function getInput(id) {
 

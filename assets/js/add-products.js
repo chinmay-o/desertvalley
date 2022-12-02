@@ -126,3 +126,11 @@ function imageUpload() {
     })
     .catch(console.error);
 }
+
+setTimeout(function() {
+
+  if (firebase.auth().currentUser == null) {
+
+    window.location.href = "/signin.html";
+  }
+}, 5000)
