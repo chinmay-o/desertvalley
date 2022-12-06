@@ -26,6 +26,14 @@ Author:		elemis
 .custom-grid .post-header {
 
   margin-right: auto;
+  max-width: 60%;
+}
+
+.project figure img {
+
+  max-height: 300px;
+  min-height: 300px;
+  object-fit: cover;
 }
 
 :root {

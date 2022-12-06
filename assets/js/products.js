@@ -46,7 +46,7 @@ function productHTML() {
   for (var i = 0; i < productArray.length; i++) {
 
     document.getElementById('productList').innerHTML += '<div id="'+ productArray[i].key +
-    '" class="project item col-md-6 col-xl-4 '+ productArray[i].category +'">'+
+    '" class="project item col-md-6 col-xl-4 '+ productArray[i].category.toLowerCase().split("(")[0].split(" ").join("") +'">'+
       '<figure class="lift rounded mb-6"><a href="https://wa.me/971508337134?text=Hi%2C%20I%20want%20to%20place%20an%20order('+
       productArray[i].name +')"> <img src="'+ productArray[i].imageURL +'" alt=""/></a></figure>'+
       '<div class="project-details justify-content-center custom-grid">'+
