@@ -9,6 +9,12 @@ $(".filter-item").each(function() {
 
 $(".filter-item").click(function() {
 
+  document.querySelectorAll('.filter-item').forEach(filter => {
+
+    filter.classList.remove('active');
+  });
+  $(this).addClass("active");
+  
   var filter = $(this).attr("data-filter");
   if (filter == "*") {
 
@@ -26,7 +32,6 @@ $(".filter-item").click(function() {
 
       $(categories[i]).each(function() {
 
-        console.log($(this));
         $(this).css("display", "none");
       });
     }
